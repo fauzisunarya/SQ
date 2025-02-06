@@ -1,0 +1,22 @@
+{
+    "LOGINKREDENSIALINVALID":{
+        "username": "WANTO",
+        "password": "009"
+    },
+    "LOGINUSERNAMEVALID":{
+        "username": "WAWAN",
+        "password": "bolehlah"
+    },
+    "LOGINPAYLOAD":{
+        "username": "<script>alert('XSS');</script>",
+        "password": " <script>alert('XSS');</script>"
+    },
+    "ADDDATACUSTOMER":{
+        "namalengkap": "wandi suherman",
+        "kontak": "0822312491418",
+        "nik": "32120213141291239",
+        "namabapa": "warid",
+        "namaibu":  "warti",
+        "pekerjaan": "mahasiswa"
+    },
+}
