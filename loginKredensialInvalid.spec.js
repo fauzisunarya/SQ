@@ -1,12 +1,17 @@
+//Berikut ini ada standariasi Boilerplate Code yang akan digunakan 
 import { test, expect } from '@playwright/test';
 import { ReportingApi } from '@reportportal/agent-js-playwright';
+
+//baris ini berfungsi untuk menggunakan data testing
 const devTestData = JSON.parse(JSON.stringify(require('../data/dev/dataDev.json')));
 const dataDev = devTestData.LOGINPASSWORDINVALID;
 const qaTestData = JSON.parse(JSON.stringify(require('../data/qa/dataQa.json')));
 const dataQa = qaTestData.LOGINPASSWORDINVALID
 
 test('test', async ({ page,browserName }) => {
+  //baris ini berfungsi untuk menginputkan data scenario id yang ada di test case
   ReportingApi.setTestCaseId('TS-UI-LOGIN-002');
+  //baris ini berfungsi untuk menginputkan data test step yang ada di test case
   ReportingApi. setDescription(`
       Test Step :
       1. Visit ke url wakanda
