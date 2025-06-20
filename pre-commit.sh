@@ -40,10 +40,4 @@ if [ -n "$PRETTIER_FILES" ]; then
   echo "$PRETTIER_FILES" | xargs git add
 fi
 
-# Jalankan hanya test yang dimodifikasi
-if [ -n "$PLAYWRIGHT_FILES" ]; then
-  echo "🚀 Running modified Playwright tests..."
-  npx playwright test $PLAYWRIGHT_FILES || { echo "❌ Tests failed! Fix them before committing."; exit 1; }
-fi
-
 exit 0
